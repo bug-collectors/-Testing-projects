@@ -1,0 +1,54 @@
+Test case Id,Test sceario,Test steps,Test data,Expected ready,Actual Result,Stats / Result
+18,"Verify that the user can navigate to the “Desktops” section, add products to the shopping cart, select from available payment methods (e.g., credit card, PayPal, etc.), and successfully complete the order using each method.","after you checkout the order two payment methods will appear: online and upon receipt ،
+We will choose the offline payment method and see if there will be any problems with the checkout or not.","Build your own computer
+Processor: 2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]
+RAM: 8GB [+$60.00]
+HDD: 400 GB [+$100.00]
+OS: Vista Home [+$50.00]
+Software: Microsoft Office [+$50.00]
+Edit
+$1,475.00	
+1
+$1,475.00	
+Digital Storm VANQUISH Custom Performance PC	$1,259.00	
+1
+$1,259.00	
+Lenovo IdeaCentre",We can checkout the order without any problems.,"We were able to make a successful checkout and
+ there were no problems with the payment method.
+ ",Pass
+19,"Verify that the user can navigate to the “Desktops” section, add products to the shopping cart, select from available payment methods (e.g., credit card, PayPal, etc.), and successfully complete the order using each method.","after you checkout the order two payment methods will appear: online and upon receipt ،
+We will choose the offline payment method and see if there will be any problems with the checkout or not.","Apple MacBook Pro	$1,800.00	2	$3,600.00
+Asus Laptop	$1,500.00	1	$1,500.00
+HP Envy 15.6-Inch Sleekbook	$1,460.00	1	$1,460.00
+HP Spectre XT Pro UltraBook	$1,350.00	1	$1,350.00
+Lenovo Thinkpad Carbon Laptop	$1,360.00	1	$1,360.00
+Samsung Premium Ultrabook	$1,590.00	1	$1,590.00
+",We can checkout the order without any problems.,"We were able to make a successful checkout and
+ there were no problems with the payment method.
+ ",Pass
+20,"Verify that the user can navigate to the “Software” section, add products to the shopping cart, choose from available payment methods (e.g., credit card, PayPal, etc.), and successfully complete the order using each payment method.","after you checkout the order two payment methods will appear: online and upon receipt ،
+We will choose the offline payment method and see if there will be any problems with the checkout or not.","Adobe Photoshop $75.00
+Microsoft Windows OS $65.00	
+",We can checkout the order without any problems.,"We were able to make a successful checkout and
+ there were no problems with the payment method.
+ ",Pass
+21,Pay by Credit Card in Euro,1.Choose credit card for payment  2. Enter card data   3.complete the application,1.Test card data   2.currency Euro,The order is successfully completed with confirmation of payment in Euros.,The site asks for the address and some information that it has saved. We will see that there is no difference in the price regarding the delivery method. It will show us two payment methods: online and offline.,Fail
+22,Payment with Invalid Credit Card in Euro,"1.Choose""Credit card"" 2.Enter incorrect card data  3.Try to complete the order",Card Number: 1234 5678 9012 3456 <br> Expiry: 01/20 <br> CVV: 000 .  currency:Euro,An error message appears stating that the card information is incorrect.,The error message appears and the payment is cancelled,Pass
+23,Leave Mandatory Payment Fields Empty in Euro Payment,"1. Choose""Credit card"" 2.Leave the card fields blank 3.Try to complete the payment",No data currency:Euro,An error message appears asking you to fill in the required fields.,An error message appears asking you to fill in the required fields.,Pass
+24,Cancel Payment During Euro Checkout,"During payment with Euro click ""Continue shopping"" or return to the previous page",N/A,"
+The payment process is canceled and you will return to the cart page or the previous page.",it will go to homepage to continue shopping or logout,Pass
+25,Verify Order History Shows Euro Payment,"1.After completing the payment 2.go to ""My Account"" 3.open ""Order history""","
+Request completed successfully. currency:Euro",The order appears in the order book with the price and currency in EUR.,There is no order history to be shown,Fail
+26,Verify successful guest checkout to payment selection,"1. Navigate to demo.nopcommerce. 2. Add a product to cart ( HTC One M8). 3. Go to Shopping Cart. 4. Click ""Checkout"". 5. Select ""Checkout as a guest"". 6. Enter billing address and proceed to shipping. 7. Select shipping method and proceed to payment.","1.Product: HTC One M8 2.Billing: Valid EG address (elglaa St, Tanta) 3.Shipping: Standard",Redirect to payment page; order summary shows total ($100 + shipping); payment methods available.,Cart adds item; guest checkout flows to payment page with $100 total and methods listed.,Pass
+27,Verify payment page load after shipping selection,"1.Follow steps to reach shipping method in checkout. 2. Select a shipping option (Ground). 3. Click ""Continue"". 4. Observe payment page.",Shipping: Ground (free or $5),"Payment page loads with order summary, payment instructions, and method radio buttons; no errors.","Page loads instantly; summary accurate, methods selectable.",Pass
+28,Verify order confirmation after payment simulation,"1. Reach payment page. 2. Select a payment method (Check/Money Order). 3. Click ""Confirm order"". 4. View confirmation.",N/A,"Redirect to order confirmation page; message ""Your order has been successfully processed!""; order number displayed; email simulation.","Confirmation page shows order # (10001), success message; option to view orders.",Pass
+29,Verify validation for incomplete billing before payment,1.Add item to cart and start checkout. 2. Enter partial billing info (no ZIP). 3. Attempt to proceed to payment.,Billing: Address without ZIP,"Error: ""ZIP / postal code is required""; prevent progression to payment.",Inline error highlights ZIP field; button disabled until fixed.,Pass
+30,Verify tax calculation on payment page,1.Reach payment page with item in cart. 2. Check order summary for taxes.,Product: $100 item Shipping to: EG (taxable state),Taxes calculated correctly ; total updates dynamically.,Summary shows accurate tax ($8.88) and grand total ($108.88 + shipping).,Pass
+31,Verify back navigation from payment to previous steps,"1.Reach payment page. 2. Click ""Back"" to shipping or billing. 3. Modify and return to payment.",N/A,Navigation works; changes reflect on payment page (updated total); no data loss.,Back button functional; edits (address change) update totals Smoothly.,Pass
+32,Verify Credit Card payment method simulation,"1.Reach payment page. 2. Select ""Credit or Debit Card"". 3. Enter test card details. 4. Click ""Confirm order"".",Card Number: 4111 1111 1111 1111 . Expiry: 12/26 . CVV: 2005 . Name: Saif mahmoud,Simulated approval; proceed to confirmation; no real charge; error for invalid details.,Demo processes as success; confirmation page loads without gateway errors.,Pass
+33,Verify invalid credit card details validation,1.Reach payment page. 2. Select Credit Card. 3. Enter invalid card info. 4. Attempt confirm.,Card Number: 1234 5678 9012 3456 (invalid) Expiry: 09/22 (past) CVV: abab (non-numeric),"Validation errors: ""Invalid card number"", ""Expired date"", ""Invalid CVV""; prevent confirmation.",Inline errors for each field; form doesn't submit until corrected.,Pass
+34,Verify payment confirmation email simulation,1.Complete payment with any method. 2. Check user account or demo logs for email.,N/A,"Post-confirmation, ""Order confirmation email sent"" message; simulates delivery with order details.","uccess page notes email sent; user can view in ""My account -> Orders"" after login.",Pass
+35,Verify payment method persistence on page refresh,1.Reach payment page. 2. Select a method (Credit Card). 3. Refresh browser. 4. Check selection.,N/A,Selected method remains ; no reset to default.,Session maintains selection; fields repopulate if entered.,Pass
+36,Verify multiple payment methods switching,"1.Reach payment page. 2. Select Credit Card, enter details. 3. Switch to Check/Money Order. 4. Confirm.",Credit Card: Valid test data (then switch),Switch clears credit fields; new method instructions load; confirmation uses selected method.,Radio buttons toggle correctly; fields reset on switch; confirms with Check method.,Pass
+37,Verify tax calculation accuracy for international addresses,"1. Add item to cart. 2. In checkout, enter international billing (Canada). 3. Proceed to payment page. 4. Check tax in summary.","Billing: Toronto, Canada . Product: $100 US",Taxes calculated per location ; total updates correctly.,"Tax defaults to US rate (0% or wrong); total undercalculates by $13, leading to revenue loss.",Fail
+38,Verify back navigation data integrity from payment,"1.Reach payment page. 2. Select method and enter details. 3. Click ""Back"" to shipping. 4. Change shipping and return. 5. Check payment fields.",Shipping change: From Ground to Express (+$10),Payment fields preserved; total updates to reflect new shipping ($110 total).,"Payment fields clear on return; total doesn't update, showing stale $100; requires re-entry.",Fail
