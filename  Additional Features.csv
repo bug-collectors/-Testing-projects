@@ -1,0 +1,51 @@
+Test case Id,Test sceario,Test steps,Test data,Expected ready,Actual Result,Stats / Result
+26,Wishlist Count Update,1.Add product to wishlist. 2. Observe wishlist count in header,"Product: ""Digital Storm VANQUISH 3 Custom Performance PC""   $1,259.00         QTY.1",Wishlist count increments by 1 immediately after adding product,Wishlist count increased by one upon adding,Pass
+27,"Verify that the user can add products from the “Camera & Photo” section to the shopping cart, apply any applicable taxes, discounts, or shipping charges, and correctly view the estimated total cost before proceeding to checkout.","After placing the products in the shopping cart, click on the estimate tap.","Nikon D5500 DSLR - Black        $670.00
+Nikon D5500 DSLR - Red        $630.00
+Apple iCam        $1,300.00
+Leica T Mirrorless Digital Camera        $530.00
+ ",we can estimate order on the adress ,web asked about the adress and there is no price difference between delivery methods.,Fail
+28,"Verify that the user can add products from the “Camera & Photo” section to the shopping cart, apply any applicable taxes, discounts, or shipping charges, and correctly view the estimated total cost before proceeding to checkout.",click on the estimate tap then try to estimate it ,"country : Egypt 
+state : Gharbia 
+Postal code : 3533",you can make estimate to the order on your fixed adrees ,"you can make estemate to the order but not on your fixed adress 
+the web asked you about the adress and there is no price difference between delivery methods.",Fail
+29,"Verify that the user can select shipping options (e.g., standard, express), enter necessary details (like postal code), and view the correct estimated shipping cost before proceeding to checkout.",click on Estimate shipping tap ,"1 : Apple MacBook Pro        $1,800.00        
+2
+$3,600.00        
+2 : Asus Laptop        $1,500.00        
+1
+$1,500.00        
+3 : HP Envy 15.6-Inch Sleekbook        $1,460.00        
+1
+$1,460.00        
+4 : HP Spectre XT Pro UltraBook        $1,350.00        
+1
+$1,350.00        
+5 : Lenovo Thinkpad Carbon Laptop        $1,360.00        
+1
+$1,360.00        
+6 : Samsung Premium Ultrabook        $1,590.00        
+1
+$1,590.00        
+",Estimate the order on your adress,web asked about the adress and there is no price difference between delivery methods.,Fail
+30,"Verify that the user can select shipping options, provide necessary details (e.g., postal code or address), and view the correct estimated shipping cost before proceeding to checkout.",click on Estimate shipping tap ,"1 : Build your own computer
+Processor: 2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]
+RAM: 2 GB
+HDD: 320 GB
+OS: Vista Home [+$50.00]
+Software: Microsoft Office [+$50.00]
+
+2 : Digital Storm VANQUISH Custom Performance PC 
+
+3 : Lenovo IdeaCentre",The web estimate the products and make order on your  address,"The web ask you about the adress and we can't see diffrence between Shipping Methods 
+Ground
+-
+$0.00
+Next Day Air
+-
+$0.00
+2nd Day Air
+-
+$0.00
+
+",Fail
