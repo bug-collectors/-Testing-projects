@@ -1,0 +1,426 @@
+Test case Id,Test sceario,Test steps,Test data,Expected ready,Actual Result,Stats / Result
+10,Shopping cart checkout terms of service,1.product is added to purchase. 2.then click checkout without click the agreement of terms of service,"Digital Storm VANQUISH 3 Custom Performance PC   $1,259.00     QTY.1",the order will checkout without any problem ,"message ""Please accept the terms of service before the next step."" is shown clearly ",Fail
+11,Change Currency to Euro,"1. At homepage change currency to Euro. 2.change from""US Dollar"" to ""Euro""",N/A,"The currency changes to Euro on all pages of the site, prices are shown in Euros (€)","The currency changes to Euro on all pages of the site, prices are shown in Euros (€)",Pass
+12,Add Product to Cart with Euro Price,1. Add product to cart after changing the currency to Euro,Microsoft Windows OS    €63.05,The product price in the basket is shown in euros with the correct price.,the price is correct ,Pass
+13,Proceed to Checkout with Euro,After adding the product to the cart Start the payment process,Microsoft Windows OS    €63.05       currency:Euro,"The payment page displays prices in Euros, total and taxes are calculated in Euros.","The payment page displays prices in Euros, total and taxes are calculated in Euros.",Pass
+14,"Verify that the user can navigate to the “Camera & Photo” section, add desired products to the shopping cart, and successfully complete the checkout process.",after estimate the order click on checkout tap ,"Nikon D5500 DSLR - Black        $670.00
+Nikon D5500 DSLR - Red        $630.00
+Apple iCam        $1,300.00
+Leica T Mirrorless Digital Camera        $530.00
+ ",the order will checkout without any problem ,The site asks for the address and some information that it has saved. We will see that there is no difference in the price regarding the delivery method. It will show us two payment methods: online and offline.,Fail
+15,"Verify that the user can proceed to checkout, enter the required billing, shipping, and payment details, and successfully place the order.",click on checkout tap after you make estimate ,"Adobe Photoshop        $75.00
+Microsoft Windows OS        $65.00
+Sound Forge Pro (recurring)
+[Auto-ship, Every 30 Months]
+$54.99",the web will checkout the order on your fixed address and asked about deliver way and payment way . ,"Your cart has standard and auto-ship (recurring) items. Only one product type is allowed per order.
+we find this massage after we make check out then we remove Sound Forge Pro (recurring)
+[Auto-ship, Every 30 Months]
+$54.99 then we can open the acess about checkout 
+so we can make a checkout for the order put web asked you about address and there is no price difference between deliver methods and web assked you about pay way and gives you two different options: online payment or upon receipt , and this is the final result : Order #6
+Order Date: Friday, September 12, 2025
+Order Status: Pending
+Order Total: $140.00
+Billing Address
+moamen abdalmanam
+Email: moamenabdalmanam@gmail.com
+Phone: 01012403497
+Fax: 01012403497
+moamen
+Egypt
+Gharbia
+El mahala Elkobra
+street1
+street 2
+3533
+Payment
+Payment Method: Check / Money Order
+Payment Status: Pending
+Shipping Address
+moamen abdalmanam
+Email: moamenabdalmanam@gmail.com
+Phone: 01012403497
+Fax: 01012403497
+moamen
+Egypt
+Gharbia
+El mahala Elkobra
+street1
+street 2
+3533
+Shipping
+Shipping Method: Next Day Air
+Shipping Status: Not yet shipped ",Fail
+16,"Verify that the user can proceed to the checkout page, provide valid billing, shipping, and payment details, and successfully confirm the order.",click on checkout tap after you make estimate ,"
+Sub-Total:        $10,860.00
+Shipping:        $0.00
+Tax:        $0.00
+Total:        $10,860.00
+You will earn:        1086 points
+
+",the web will checkout and make order on your adress,"the web ask about 
+First name: 
+Moamen
+ *
+Last name: 
+Abdalmanam
+ *
+Email: 
+moamenabdalmanam@gmail.com
+ *
+Company: 
+moamen
+Country: 
+Egypt
+ *
+State / province: 
+Gharbia
+City: 
+El mahala Elkobra 
+ *
+Address 1: 
+street1
+ *
+Address 2: 
+street 2 
+Zip / postal code: 
+3533
+ *
+Phone number: 
+01012403497
+ *
+Fax number: 
+01012403497
+then you can complete checkout method and chosse deliver way and payment way .",Fail
+17,"Verify that the user can proceed to checkout, review their cart items, enter valid billing, shipping, and payment details, and successfully place the order.","after you estimate your order 
+click on checkout tap ","
+Sub-Total:        $3,074.00
+Shipping: (Ground)        $0.00
+Tax:        $0.00
+Total:        $3,074.00",The web checkout the order on your fixed adress ,"the web asked you again about 
+First name: 
+Moamen
+ *
+Last name: 
+Abdalmanam
+ *
+Email: 
+moamenabdalmanam@gmail.com
+ *
+Company: 
+Moamen
+Country: 
+Egypt
+ *
+State / province: 
+Gharbia
+City: 
+El mahala Elkobra 
+ *
+Address 1: 
+street1
+ *
+Address 2: 
+street 2 
+Zip / postal code: 
+3533
+ *
+Phone number: 
+01012403497
+ *
+Fax number: 
+01012403497
+ 
+after this when you click on contain tap you can complete checkout method and chosee a way of payment ",Fail
+18,"Verify that the user can add products from the “Books” section to the shopping cart and successfully complete the checkout process, including providing valid billing, shipping, and payment information.","after choose the products and put it in shopping cart click on chickout tap 
+then you fill in the blanks :
+First name: 
+Moamen
+ *
+Last name: 
+Abdalmanam
+ *
+Email: 
+moamenabdalmanam@gmail.com
+ *
+Company: 
+moamen
+Country: 
+United States of America
+ *
+State / province: 
+Select state
+City: 
+ *
+Address 1: 
+ *
+Address 2: 
+Zip / postal code: 
+ *
+Phone number: 
+ *
+Fax number: 
+and choose order way : 
+ Ground ($0.00)
+Shipping by land transport
+ 
+ Next Day Air ($0.00)
+The one day air shipping
+ 
+ 2nd Day Air ($0.00)
+The two day air shipping
+then will appear shipping adress 
+
+then choose payment way : 
+ Check / Money Order
+Pay by cheque or money order
+ 
+Credit Card
+ Credit Card
+Pay by credit / debit card
+Then confirm order .","Fahrenheit 451 by Ray Bradbury
+First Prize Pies
+Pride and Prejudice
+
+Sub-Total:        $102.00
+Shipping: (Ground)        $0.00
+Tax:        $0.00
+Total:        $102.00
+You will earn: ","The purchase process will be completed successfully.
+",purchase process done and we make checkout .,Pass
+19,"Verify that the user can add products from the “Jewelry” section to the shopping cart and successfully complete the checkout process by providing valid billing, shipping, and payment details.","after we added the products on the shipping cart 
+click on the tap of checkout then we fill in the blanks:
+First name: 
+moamen
+ *
+Last name: 
+abdalmanam
+ *
+Email: 
+moamenabdalmanam@gmail.com
+ *
+Company: 
+moamen
+Country: 
+United States of America
+ *
+State / province: 
+Select state
+City: 
+ *
+Address 1: 
+ *
+Address 2: 
+Zip / postal code: 
+ *
+Phone number: 
+ *
+Fax number: 
+then choose order way :
+ Ground ($0.00)
+Shipping by land transport
+ 
+ Next Day Air ($0.00)
+The one day air shipping
+ 
+ 2nd Day Air ($0.00)
+The two day air shipping
+
+then choose payment way :
+Check / Money Order
+ Check / Money Order
+Pay by cheque or money order
+ 
+Credit Card
+ Credit Card
+Pay by credit / debit card
+your information will appear so click ""contain""      
+then click ""confirm"" ","Elegant Gemstone Necklace (rental)
+Start date: 10/31/2025. End date: 11/30/2025.
+
+Flower Girl Bracelet
+
+Vintage Style Engagement Ring
+
+
+Sub-Total:        $3,360.00
+Shipping: (Ground)        $0.00
+Tax:        $0.00
+Total:        $3,360.00",we can confirm process and buy all products ,We faced a problem which is that there is a product that is not for sale only for rent,Faild
+20,"Verify that the user can add one or more items from the “Gift Cards” section to the shopping cart and successfully complete the checkout process by entering valid billing, shipping, and payment information.",,"$25 Virtual Gift Card
+$50 Physical Gift Card
+$100 Physical Gift Card",we can confirm process and buy all products ,we confirm the order and puy the products .,Pass
+21,"Verify that the user can navigate to the “Apparel → Shoes” section, add selected products to the shopping cart, and successfully complete the checkout process by providing valid billing, shipping, and payment information.","after choose the products and put it in shopping cart click on checkout tap 
+then you fill in the blanks :
+First name: 
+Ahmed
+ *
+Last name: 
+Ayman
+ *
+Email: 
+ahmedaumen0@gmail.com
+ *
+Company: 
+moamen
+Country: 
+United States of America
+ *
+State / province: 
+Select state
+City: 
+ *
+Address 1: 
+ *
+Address 2: 
+Zip / postal code: 
+ *
+Phone number: 
+ *
+Fax number: 
+and choose order way : 
+ Ground ($0.00)
+Shipping by land transport
+ 
+ Next Day Air ($0.00)
+The one day air shipping
+ ","""Blue and Green Sneaker – size 8 Nike Floral Trainer adidas Consortium Campus 80s Running Shoes""",we can confirm process and buy all products ,we can confirm process and buy all products ,Pass
+22,"Verify that the user can navigate to the “Apparel → Clothing” section, add desired products to the shopping cart, and successfully complete the checkout process by providing valid billing, shipping, and payment details.","after choose the products and put it in shopping cart click on checkout tap 
+then you fill in the blanks :
+First name: 
+Ahmed
+ *
+Last name: 
+Ayman
+ *
+Email: 
+ahmedaumen0@gmail.com
+ *
+Company: 
+moamen
+Country: 
+United States of America
+ *
+State / province: 
+Select state
+City: 
+ *
+Address 1: 
+ *
+Address 2: 
+Zip / postal code: 
+ *
+Phone number: 
+ *
+Fax number: 
+and choose order way : 
+ Ground ($0.00)
+Shipping by land transport
+ 
+ Next Day Air ($0.00)
+The one day air shipping
+ ","""Custom T-Shirt (custom word “Ahmed”) Levi’s 511 Jeans (size 32) Casual Belt""",we can confirm process and buy all products ,we can confirm process and buy all products ,Pass
+23,"Verify that the user can navigate to the “Apparel → Accessories” section, add one or more products to the shopping cart, and successfully complete the checkout process by providing valid billing, shipping, and payment details.","after choose the products and put it in shopping cart click on checkout tap 
+then you fill in the blanks :
+First name: 
+Ahmed
+ *
+Last name: 
+Ayman
+ *
+Email: 
+ahmedaumen0@gmail.com
+ *
+Company: 
+moamen
+Country: 
+United States of America
+ *
+State / province: 
+Select state
+City: 
+ *
+Address 1: 
+ *
+Address 2: 
+Zip / postal code: 
+ *
+Phone number: 
+ *
+Fax number: 
+and choose order way : 
+ Ground ($0.00)
+Shipping by land transport
+ 
+ Next Day Air ($0.00)
+The one day air shipping
+ ","""Ray-Ban Aviator Sunglasses Leather Wallet Smart Watch Series 5""",we can confirm process and buy all products ,we can confirm process and buy all products ,Pass
+24,"Verify that the user can add digital download products to the shopping cart and successfully complete the checkout process, ensuring that the system provides access to the purchased digital content after payment.","after choose the products and put it in shopping cart click on checkout tap 
+then you fill in the blanks :
+First name: 
+Ahmed
+ *
+Last name: 
+Ayman
+ *
+Email: 
+ahmedaumen0@gmail.com
+ *
+Company: 
+moamen
+Country: 
+United States of America
+ *
+State / province: 
+Select state
+City: 
+ *
+Address 1: 
+ *
+Address 2: 
+Zip / postal code: 
+ *
+Phone number: 
+ *
+Fax number: 
+and choose order way : 
+ Ground ($0.00)
+Shipping by land transport
+ 
+ Next Day Air ($0.00)
+The one day air shipping
+ ","""Night Visions If You Wait (donation)""",we can confirm process and buy all products ,we can confirm process and buy all products ,Pass
+25,"Verify that the user can add multiple digital download products to the shopping cart, update the quantities as needed, and successfully complete the checkout process, ensuring that the system correctly processes the order and provides access to all purchased digital content.","after choose the products and put it in shopping cart click on checkout tap 
+then you fill in the blanks :
+First name: 
+Ahmed
+ *
+Last name: 
+Ayman
+ *
+Email: 
+ahmedaumen0@gmail.com
+ *
+Company: 
+moamen
+Country: 
+United States of America
+ *
+State / province: 
+Select state
+City: 
+ *
+Address 1: 
+ *
+Address 2: 
+Zip / postal code: 
+ *
+Phone number: 
+ *
+Fax number: 
+and choose order way : 
+ Ground ($0.00)
+Shipping by land transport
+ 
+ Next Day Air ($0.00)
+The one day air shipping
+ ","""Science & Faith – $3.00 Quantity: 2 Total: $6.00""",we can confirm process and buy all products ,we can confirm process and buy all products ,Pass
