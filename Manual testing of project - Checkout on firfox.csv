@@ -1,0 +1,11 @@
+Test case Id,Test sceario,Test steps,Test data,Expected ready,Actual Result,Stats / Result
+TC_1,Verify checkout cannot proceed without accepting terms,1. Add product to cart 2. Click Checkout without checking agreement,"Digital Storm VANQUISH 3 PC – $1,259.00",Message shown: “Please accept the terms of service before the next step,Message shown correctly,Pass
+TC_2,Verify checkout flow maintains currency when set to Euro,Change currency → Add product → Proceed checkout,Microsoft Windows OS – €63.05,Checkout values appear in Euros,Correct display,Pass
+TC_3,Ensure checkout proceeds correctly with multiple camera products,Add products → Estimate → Checkout,Nikon & Apple camera items,Order completes without issue,System asks for address & shows no delivery price difference,Fail
+TC_4,Validate system blocks combining recurring & normal products,"Add Adobe Photoshop, Windows OS, Recurring Sound Forge → Checkout",Various licenses,Proceed normally,Only one product type is allowed per order,Fail
+TC_5,Verify valid checkout completion & invoice creation,Remove recurring item → Re-checkout → Fill details,Software bundle,Order completes successfully & invoice displayed,Order 6 created – shown with pending status,Pass
+TC_6,Checkout requires full billing form completion,Checkout → Leave address empty,"Order worth $10,860",System requires user details,Required fields shown & validated,Fail
+TC_7,Validate correct navigation from billing → shipping → payment,Add items → Checkout → Fill details → Continue,"$3,074 order",Order placed successfully,User forced to reenter address again,Fail
+TC_8,Verify book purchase checkout flow,Add Books → Checkout → Fill info → Select shipping → Payment → Confirm,3 Books Order ($102 total),Order processed correctly,Purchase completed,Pass
+TC_9,Checkout Jewelry order with rental validation,Add Jewelry → Checkout → Review,Rental + purchase items,Order completes,Warning that one product is rental,Pass
+TC_10,Validate checkout for physical and virtual gift cards,Add gift cards → Checkout,"$25 Virtual, $50 Physical, $100 Physical",Checkout successful,Checkout completed successfully,Pass

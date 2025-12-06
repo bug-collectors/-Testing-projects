@@ -1,0 +1,387 @@
+   Sheet ,Test ID,Test scenario,Expected result,    Actual result,    Result
+Login&Register ,TC_01,"Verify ""Remember me"" persistence across browsers",Cookie should not persist across different browsers; prompt for login in new browser.,Session carries over to Firefox; unauthorized auto-login.,Fail
+Login&Register,TC_02,Verify registration form submission on mobile,Form submits successfully; responsive layout with touch-friendly buttons.,Submit button unresponsive on tap; requires desktop mouse click simulation; form fields overlap on small screens.,Fail
+Login&Register,TC_03,Verify newsletter opt-in persistence after failed registration,Checkbox state preserved; newsletter subscribes on Valid emails,Newsletter field enter any Email and subscribes successfuly ,Fail
+Login&Register,TC_04,Verify registration with Empty Company Details,the website should not register and gives an alert message to full the empty fields,the website registers successfuly without any problem and company name.,Fail
+Homepage,TC_05,Community poll functionality selectable,"Poll displayed with options, but voting may be disabled on demo site",Failed to vote and message appears says demo.nopcommerce.com says Failed to vote.,Fail
+Homepage,TC_20,Verify featured products section buttons,When click the button it add the product directly to the cart,While click the Add to cart button it enters the product to select the features you want,Fail
+Homepage,TC_21,Verify featured products section buttons,When click the button it add the product directly to the cart,While click the Add to cart button it enters the product to select the informations.,Fail
+Homepage,TC_22,Verify featured products section buttons,Verify featured products section buttons,While click the Add to cart button it enters the product to enter some informations,Fail
+Homepage,TC_23,Verify language selector functionality,"Page content should translate (e.g., ""Welcome to our store"" becomes ""Bienvenido a nuestra tienda""); layout remains intact.",There is no Page Language selector available,Fail
+Homepage,TC_24,Verify add-to-cart for out-of-stock item,"Button should be disabled or show ""Out of stock"" message; prevent addition to cart.","Button remains clickable; item adds to cart despite stock=0, leading to order issues later.",Fail
+Homepage,TC_39,Verify page load on slow network,Page should load within 10 seconds or less even on slow network; progressive loading for key elements.,"Images and scripts timeout; page partially loads (e.g., text visible but products blank) after 15+ seconds.",Fail
+Homepage,TC_01,Verify newsletter subscription with invalid email,"Form should validate and show error message (""Please enter a valid email""); not submit.","Form submits without validation; backend logs error, but user sees generic success message misleadingly.",Fail
+Homepage,TC_02,Verify hover effects on touch devices,Touch should trigger equivalent of hover (quick view popup or zoom); responsive to gestures.,No reaction on tap; quick view only works on mouse hover,Fail
+Homepage,TC_03,Verify scroll-to-top functionality,Button should appear after scrolling; clicking smoothly scrolls to top without jumps.,No Scroll-to-top arrow to back to top seamlessly,Fail
+Homepage,TC_04,the apppearnce of the price beneath each item in the digital downloads page,price should appear below every item ex: Night visions 2.8$,the price doesn't appear below two of the items :1- If you wait (donation) 2- Science & faith,Fail
+Computers,TC_05,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Electronics,TC_05,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Apparel,TC_21,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Digital Downloads,TC_22,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Books,TC_23,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Jewelry,TC_24,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Gift Cards,TC_39,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Cart,TC_01,"Verify that the user can navigate to the ""Notebooks"" tab, select products, and add them successfully to the shopping cart.",the products we choose will put in the shopping cart,"When we choose the products and click on the add to cart tab,
+  we find that the Apple MacBook Pro cannot be added to less than 2",Fail
+Cart,TC_02,"Verify that the user can navigate to the ""Jewelry"" section, select one or more items, and add them successfully to the shopping cart.",the products will put in shopping cart ,"The products were placed in the shopping cart
+, but we encountered a problem with one of the products (Elegant Gemstone Necklace)
+, which is that this product cannot be purchased,
+ only rented, but it was placed in the shopping cart.",Fail
+Checkout,TC_03,Shopping cart checkout terms of service,the order will checkout without any problem,"message ""Please accept the terms of service before the next step."" is shown clearly",Fail
+Checkout,TC_04,"Verify that the user can navigate to the “Camera & Photo” section, add desired products to the shopping cart, and successfully complete the checkout process.",the order will checkout without any problem,The site asks for the address and some information that it has saved. We will see that there is no difference in the price regarding the delivery method. It will show us two payment methods: online and offline.,Fail
+Checkout,TC_05,"Verify that the user can proceed to checkout, enter the required billing, shipping, and payment details, and successfully place the order.",the web will checkout the order on your fixed address and asked about deliver way and payment way .,"Your cart has standard and auto-ship (recurring) items. Only one product type is allowed per order.
+ we find this massage after we make check out then we remove Sound Forge Pro (recurring)
+ [Auto-ship, Every 30 Months]
+ $54.99 then we can open the acess about checkout 
+ so we can make a checkout for the order put web asked you about address and there is no price difference between deliver methods and web assked you about pay way and gives you two different options: online payment or upon receipt , and this is the final result : Order #6
+ Order Date: Friday, September 12, 2025
+ Order Status: Pending
+ Order Total: $140.00
+ Billing Address
+ moamen abdalmanam
+ Email: moamenabdalmanam@gmail.com
+ Phone: 01012403497
+ Fax: 01012403497
+ moamen
+ Egypt
+ Gharbia
+ El mahala Elkobra
+ street1
+ street 2
+ 3533
+ Payment
+ Payment Method: Check / Money Order
+ Payment Status: Pending
+ Shipping Address
+ moamen abdalmanam
+ Email: moamenabdalmanam@gmail.com
+ Phone: 01012403497
+ Fax: 01012403497
+ moamen
+ Egypt
+ Gharbia
+ El mahala Elkobra
+ street1
+ street 2
+ 3533
+ Shipping
+ Shipping Method: Next Day Air
+ Shipping Status: Not yet shipped",Fail
+Checkout,TC_20,"Verify that the user can proceed to the checkout page, provide valid billing, shipping, and payment details, and successfully confirm the order.",the web will checkout and make order on your adress,"the web ask about 
+ First name: 
+ Moamen
+  *
+ Last name: 
+ Abdalmanam
+  *
+ Email: 
+ moamenabdalmanam@gmail.com
+  *
+ Company: 
+ moamen
+ Country: 
+ Egypt
+  *
+ State / province: 
+ Gharbia
+ City: 
+ El mahala Elkobra 
+  *
+ Address 1: 
+ street1
+  *
+ Address 2: 
+ street 2 
+ Zip / postal code: 
+ 3533
+  *
+ Phone number: 
+ 01012403497
+  *
+ Fax number: 
+ 01012403497
+ then you can complete checkout method and chosse deliver way and payment way .",Fail
+Checkout,TC_21,"Verify that the user can proceed to checkout, review their cart items, enter valid billing, shipping, and payment details, and successfully place the order.",The web checkout the order on your fixed adress,"the web asked you again about 
+ First name: 
+ Moamen
+  *
+ Last name: 
+ Abdalmanam
+  *
+ Email: 
+ moamenabdalmanam@gmail.com
+  *
+ Company: 
+ Moamen
+ Country: 
+ Egypt
+  *
+ State / province: 
+ Gharbia
+ City: 
+ El mahala Elkobra 
+  *
+ Address 1: 
+ street1
+  *
+ Address 2: 
+ street 2 
+ Zip / postal code: 
+ 3533
+  *
+ Phone number: 
+ 01012403497
+  *
+ Fax number: 
+ 01012403497
+  
+ after this when you click on contain tap you can complete checkout method and chosee a way of payment",Fail
+Checkout,TC_22,"Verify that the user can add products from the “Jewelry” section to the shopping cart and successfully complete the checkout process by providing valid billing, shipping, and payment details.",we can confirm process and buy all products,We faced a problem which is that there is a product that is not for sale only for rent,Fail
+Payment,TC_23,Pay by Credit Card in Euro,The order is successfully completed with confirmation of payment in Euros.,The site asks for the address and some information that it has saved. We will see that there is no difference in the price regarding the delivery method. It will show us two payment methods: online and offline.,Fail
+Payment,TC_24,Verify Order History Shows Euro Payment,The order appears in the order book with the price and currency in EUR.,There is no order history to be shown,Fail
+Payment,TC_39,Verify tax calculation accuracy for international addresses,Taxes calculated per location ; total updates correctly.,"Tax defaults to US rate (0% or wrong); total undercalculates by $13, leading to revenue loss.",Fail
+Payment,TC_01,Verify back navigation data integrity from payment,Payment fields preserved; total updates to reflect new shipping ($110 total).,"Payment fields clear on return; total doesn't update, showing stale $100; requires re-entry.",Fail
+Additional Features,TC_02,"Verify that the user can add products from the “Camera & Photo” section to the shopping cart, apply any applicable taxes, discounts, or shipping charges, and correctly view the estimated total cost before proceeding to checkout.",we can estimate order on the adress,web asked about the adress and there is no price difference between delivery methods.,Fail
+Additional Features,TC_03,"Verify that the user can add products from the “Camera & Photo” section to the shopping cart, apply any applicable taxes, discounts, or shipping charges, and correctly view the estimated total cost before proceeding to checkout.",you can make estimate to the order on your fixed adrees,"you can make estemate to the order but not on your fixed adress 
+ the web asked you about the adress and there is no price difference between delivery methods.",Fail
+Additional Features,TC_04,"Verify that the user can select shipping options (e.g., standard, express), enter necessary details (like postal code), and view the correct estimated shipping cost before proceeding to checkout.",Estimate the order on your adress,web asked about the adress and there is no price difference between delivery methods.,Fail
+Additional Features,TC_05,"Verify that the user can select shipping options, provide necessary details (e.g., postal code or address), and view the correct estimated shipping cost before proceeding to checkout.",The web estimate the products and make order on your address,"The web ask you about the adress and we can't see diffrence between Shipping Methods 
+ Ground
+ -
+ $0.00
+ Next Day Air
+ -
+ $0.00
+ 2nd Day Air
+ -
+ $0.00",Fail
+Login&Register on firefox,TC_01,Verify successful login with valid credentials,Redirects to account dashboard + My account visible,Login faild,Fail
+Login&Register on firefox,TC_02,"Verify ""Remember me"" checkbox",Browser should keep user logged in,Login faild,Fail
+Electronics on firefox,TC_05,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Computers on firefox,TC_05,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Apparel on firefox,TC_21,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Digital Downloads on firefox,TC_22,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Books on firefox,TC_23,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Jewelry on firefox,TC_24,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Gift Cards on firefox,TC_39,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Cart on firefox,TC_07,Verify cart empties after logout,Cart should be empty,Items remained unexpectedly,Fail
+Checkout on firefox,TC_03,Ensure checkout proceeds correctly with multiple camera products,Order completes without issue,System asks for address & shows no delivery price difference,Fail
+Checkout on firefox,TC_04,Validate system blocks combining recurring & normal products,Proceed normally,Only one product type is allowed per order,Fail
+Checkout on firefox,TC_06,Checkout requires full billing form completion,System requires user details,Required fields shown & validated,Fail
+Checkout on firefox,TC_7,Validate correct navigation from billing → shipping → payment,Order placed successfully,User forced to reenter address again,Fail
+Payment on firefox,TC_4,Validate payment using Euro + Credit Card,Order completed successfully with Euro transaction,Address and required fields shown again + payment methods appear again — price unchanged,Fail
+Payment on firefox,TC_5,"After successful Euro payment, check Order History",Order displayed with Euro total,No order history displayed,Fail
+Payment on firefox,TC_8,System should validate invalid card details,Inline validation messages blocking checkout,The card was not accepted.,Fail
+Payment on firefox,TC_9,Payment details should persist when user navigates back,Updated totals + preserved fields,Fields lost & totals didn’t refresh,Fail
+Additional Features on firefox,TC_02,"Verify that the user can add products from the “Camera & Photo” section to the shopping cart, apply any applicable taxes, discounts, or shipping charges, and correctly view the estimated total cost before proceeding to checkout.",we can estimate order on the adress,web asked about the adress and there is no price difference between delivery methods.,Fail
+Additional Features on firefox,TC_03,"Verify that the user can add products from the “Camera & Photo” section to the shopping cart, apply any applicable taxes, discounts, or shipping charges, and correctly view the estimated total cost before proceeding to checkout.",you can make estimate to the order on your fixed adrees,"you can make estemate to the order but not on your fixed adress 
+ the web asked you about the adress and there is no price difference between delivery methods.",Fail
+Additional Features on firefox,TC_04,"Verify that the user can select shipping options (e.g., standard, express), enter necessary details (like postal code), and view the correct estimated shipping cost before proceeding to checkout.",Estimate the order on your adress,web asked about the adress and there is no price difference between delivery methods.,Fail
+Additional Features on firefox,TC_05,"Verify that the user can select shipping options, provide necessary details (e.g., postal code or address), and view the correct estimated shipping cost before proceeding to checkout.",The web estimate the products and make order on your address,"The web ask you about the adress and we can't see diffrence between Shipping Methods 
+ Ground
+ -
+ $0.00
+ Next Day Air
+ -
+ $0.00
+ 2nd Day Air
+ -
+ $0.00",Fail
+Login&Register on Microsoft Edge,TC_01,"Verify ""Remember me"" persistence across browsers",Cookie should not persist across different browsers; prompt for login in new browser.,Session carries over to Firefox; unauthorized auto-login.,Fail
+Login&Register on Microsoft Edge,TC_02,Verify registration form submission on mobile,Form submits successfully; responsive layout with touch-friendly buttons.,Submit button unresponsive on tap; requires desktop mouse click simulation; form fields overlap on small screens.,Fail
+Login&Register on Microsoft Edge,TC_03,Verify newsletter opt-in persistence after failed registration,Checkbox state preserved; newsletter subscribes on Valid emails,Newsletter field enter any Email and subscribes successfuly ,Fail
+Login&Register on Microsoft Edge,TC_04,Verify registration with Empty Company Details,the website should not register and gives an alert message to full the empty fields,the website registers successfuly without any problem and company name.,Fail
+Homepage on Microsoft Edge,TC_05,Community poll functionality selectable,"Poll displayed with options, but voting may be disabled on demo site",Failed to vote and message appears says demo.nopcommerce.com says Failed to vote.,Fail
+Homepage on Microsoft Edge,TC_20,Verify featured products section buttons,When click the button it add the product directly to the cart,While click the Add to cart button it enters the product to select the features you want,Fail
+Homepage on Microsoft Edge,TC_21,Verify featured products section buttons,When click the button it add the product directly to the cart,While click the Add to cart button it enters the product to select the informations.,Fail
+Homepage on Microsoft Edge,TC_22,Verify featured products section buttons,Verify featured products section buttons,While click the Add to cart button it enters the product to enter some informations,Fail
+Homepage on Microsoft Edge,TC_23,Verify language selector functionality,"Page content should translate (e.g., ""Welcome to our store"" becomes ""Bienvenido a nuestra tienda""); layout remains intact.",There is no Page Language selector available,Fail
+Homepage on Microsoft Edge,TC_24,Verify add-to-cart for out-of-stock item,"Button should be disabled or show ""Out of stock"" message; prevent addition to cart.","Button remains clickable; item adds to cart despite stock=0, leading to order issues later.",Fail
+Homepage on Microsoft Edge,TC_39,Verify page load on slow network,Page should load within 10 seconds or less even on slow network; progressive loading for key elements.,"Images and scripts timeout; page partially loads (e.g., text visible but products blank) after 15+ seconds.",Fail
+Homepage on Microsoft Edge,TC_01,Verify newsletter subscription with invalid email,"Form should validate and show error message (""Please enter a valid email""); not submit.","Form submits without validation; backend logs error, but user sees generic success message misleadingly.",Fail
+Homepage on Microsoft Edge,TC_02,Verify hover effects on touch devices,Touch should trigger equivalent of hover (quick view popup or zoom); responsive to gestures.,No reaction on tap; quick view only works on mouse hover,Fail
+Homepage on Microsoft Edge,TC_03,Verify scroll-to-top functionality,Button should appear after scrolling; clicking smoothly scrolls to top without jumps.,No Scroll-to-top arrow to back to top seamlessly,Fail
+Homepage on Microsoft Edge,TC_04,the apppearnce of the price beneath each item in the digital downloads page,price should appear below every item ex: Night visions 2.8$,the price doesn't appear below two of the items :1- If you wait (donation) 2- Science & faith,Fail
+Computers on Microsoft Edge,TC_05,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Electronics on Microsoft Edge,TC_05,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Apparel on Microsoft Edge,TC_21,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Digital Downloads on Microsoft Edge,TC_22,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Books on Microsoft Edge,TC_23,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Jewelry on Microsoft Edge,TC_24,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Gift Cards on Microsoft Edge,TC_39,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+ The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+ The user is able to proceed without proper validation.",Fail
+Cart on Microsoft Edge,TC_01,"Verify that the user can navigate to the ""Notebooks"" tab, select products, and add them successfully to the shopping cart.",the products we choose will put in the shopping cart,"When we choose the products and click on the add to cart tab,
+  we find that the Apple MacBook Pro cannot be added to less than 2",Fail
+Cart on Microsoft Edge,TC_02,"Verify that the user can navigate to the ""Jewelry"" section, select one or more items, and add them successfully to the shopping cart.",the products will put in shopping cart ,"The products were placed in the shopping cart
+, but we encountered a problem with one of the products (Elegant Gemstone Necklace)
+, which is that this product cannot be purchased,
+ only rented, but it was placed in the shopping cart.",Fail
+Checkout on Microsoft Edge,TC_03,Shopping cart checkout terms of service,the order will checkout without any problem,"message ""Please accept the terms of service before the next step."" is shown clearly",Fail
+Checkout on Microsoft Edge,TC_04,"Verify that the user can navigate to the “Camera & Photo” section, add desired products to the shopping cart, and successfully complete the checkout process.",the order will checkout without any problem,The site asks for the address and some information that it has saved. We will see that there is no difference in the price regarding the delivery method. It will show us two payment methods: online and offline.,Fail
+Checkout on Microsoft Edge,TC_05,"Verify that the user can proceed to checkout, enter the required billing, shipping, and payment details, and successfully place the order.",the web will checkout the order on your fixed address and asked about deliver way and payment way .,"Your cart has standard and auto-ship (recurring) items. Only one product type is allowed per order.
+ we find this massage after we make check out then we remove Sound Forge Pro (recurring)
+ [Auto-ship, Every 30 Months]
+ $54.99 then we can open the acess about checkout 
+ so we can make a checkout for the order put web asked you about address and there is no price difference between deliver methods and web assked you about pay way and gives you two different options: online payment or upon receipt , and this is the final result : Order #6
+ Order Date: Friday, September 12, 2025
+ Order Status: Pending
+ Order Total: $140.00
+ Billing Address
+ moamen abdalmanam
+ Email: moamenabdalmanam@gmail.com
+ Phone: 01012403497
+ Fax: 01012403497
+ moamen
+ Egypt
+ Gharbia
+ El mahala Elkobra
+ street1
+ street 2
+ 3533
+ Payment
+ Payment Method: Check / Money Order
+ Payment Status: Pending
+ Shipping Address
+ moamen abdalmanam
+ Email: moamenabdalmanam@gmail.com
+ Phone: 01012403497
+ Fax: 01012403497
+ moamen
+ Egypt
+ Gharbia
+ El mahala Elkobra
+ street1
+ street 2
+ 3533
+ Shipping
+ Shipping Method: Next Day Air
+ Shipping Status: Not yet shipped",Fail
+Checkout on Microsoft Edge,TC_20,"Verify that the user can proceed to the checkout page, provide valid billing, shipping, and payment details, and successfully confirm the order.",the web will checkout and make order on your adress,"the web ask about 
+ First name: 
+ Moamen
+  *
+ Last name: 
+ Abdalmanam
+  *
+ Email: 
+ moamenabdalmanam@gmail.com
+  *
+ Company: 
+ moamen
+ Country: 
+ Egypt
+  *
+ State / province: 
+ Gharbia
+ City: 
+ El mahala Elkobra 
+  *
+ Address 1: 
+ street1
+  *
+ Address 2: 
+ street 2 
+ Zip / postal code: 
+ 3533
+  *
+ Phone number: 
+ 01012403497
+  *
+ Fax number: 
+ 01012403497
+ then you can complete checkout method and chosse deliver way and payment way .",Fail
+Checkout on Microsoft Edge,TC_21,"Verify that the user can proceed to checkout, review their cart items, enter valid billing, shipping, and payment details, and successfully place the order.",The web checkout the order on your fixed adress,"the web asked you again about 
+ First name: 
+ Moamen
+  *
+ Last name: 
+ Abdalmanam
+  *
+ Email: 
+ moamenabdalmanam@gmail.com
+  *
+ Company: 
+ Moamen
+ Country: 
+ Egypt
+  *
+ State / province: 
+ Gharbia
+ City: 
+ El mahala Elkobra 
+  *
+ Address 1: 
+ street1
+  *
+ Address 2: 
+ street 2 
+ Zip / postal code: 
+ 3533
+  *
+ Phone number: 
+ 01012403497
+  *
+ Fax number: 
+ 01012403497
+  
+ after this when you click on contain tap you can complete checkout method and chosee a way of payment",Fail
+Checkout on Microsoft Edge,TC_22,"Verify that the user can add products from the “Jewelry” section to the shopping cart and successfully complete the checkout process by providing valid billing, shipping, and payment details.",we can confirm process and buy all products,We faced a problem which is that there is a product that is not for sale only for rent,Fail
+Payment on Microsoft Edge,TC_23,Pay by Credit Card in Euro,The order is successfully completed with confirmation of payment in Euros.,The site asks for the address and some information that it has saved. We will see that there is no difference in the price regarding the delivery method. It will show us two payment methods: online and offline.,Fail
+Payment on Microsoft Edge,TC_24,Verify Order History Shows Euro Payment,The order appears in the order book with the price and currency in EUR.,There is no order history to be shown,Fail
+Payment on Microsoft Edge,TC_39,Verify tax calculation accuracy for international addresses,Taxes calculated per location ; total updates correctly.,"Tax defaults to US rate (0% or wrong); total undercalculates by $13, leading to revenue loss.",Fail
+Payment on Microsoft Edge,TC_01,Verify back navigation data integrity from payment,Payment fields preserved; total updates to reflect new shipping ($110 total).,"Payment fields clear on return; total doesn't update, showing stale $100; requires re-entry.",Fail
+Additional Features on Microsoft Edge,TC_02,"Verify that the user can add products from the “Camera & Photo” section to the shopping cart, apply any applicable taxes, discounts, or shipping charges, and correctly view the estimated total cost before proceeding to checkout.",we can estimate order on the adress,web asked about the adress and there is no price difference between delivery methods.,Fail
+Additional Features on Microsoft Edge,TC_03,"Verify that the user can add products from the “Camera & Photo” section to the shopping cart, apply any applicable taxes, discounts, or shipping charges, and correctly view the estimated total cost before proceeding to checkout.",you can make estimate to the order on your fixed adrees,"you can make estemate to the order but not on your fixed adress 
+ the web asked you about the adress and there is no price difference between delivery methods.",Fail
+Additional Features on Microsoft Edge,TC_04,"Verify that the user can select shipping options (e.g., standard, express), enter necessary details (like postal code), and view the correct estimated shipping cost before proceeding to checkout.",Estimate the order on your adress,web asked about the adress and there is no price difference between delivery methods.,Fail
+Additional Features on Microsoft Edge,TC_05,"Verify that the user can select shipping options, provide necessary details (e.g., postal code or address), and view the correct estimated shipping cost before proceeding to checkout.",The web estimate the products and make order on your address,"The web ask you about the adress and we can't see diffrence between Shipping Methods 
+ Ground
+ -
+ $0.00
+ Next Day Air
+ -
+ $0.00
+ 2nd Day Air
+ -
+ $0.00",Fail

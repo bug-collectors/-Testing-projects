@@ -1,0 +1,148 @@
+Test case Id,Test sceario,Test steps,Test data,Expected result,Actual Result,Stats / Result
+5,"Verify user can browse Computer products, add items to cart, and place an order successfully","1:click on the tap of computer then chosee Desktops tap
+2:then click on build your own computer 
+3:choose the RAM and HDD that you need 
+4: click on the add to cart tap then back to the first bage 
+5:choose the Digital Storm VANQUISH Custom Performance PC and Lenovo IdeaCentre 
+6:click add to the cart 
+7: go to shopping cart bage to show if the process make will .","Add Build your own computer to the cart 
+chosee RAM 2GB
+chosee HDD 320 GB 
+Add Digital Storm VANQUISH Custom Performance PC to the cart 
+
+Add Lenovo IdeaCentre to the cart 
+","products will be added to your shopping cart 
+",products added to the shopping cart ,Pass
+6,Empty Shopping Cart Message,"Click on the tap of  ""Shopping cart"" and add some products then remove the products ",No products added to cart,"products will removed  
+Message ""Your shopping cart is empty!"" is displayed","product removed and 
+message ""Your shopping cart is empty!"" is shown clearly",Pass
+7,"Verify user can browse Electronics, select products, and add them to the cart successfully","1:click on electronics tap 
+2:choose Camera & photo products 
+3:choose Nikon D5500 DSLR 
+4:choose colour of it ( Nikon D5500 DSLR - Black , Nikon D5500 DSLR - Red )
+5:back to the previous page then choose Apple iCam and click on add to cart 
+6: choose Leica T Mirrorless Digital Camera and click on add to the cart tap . ","Nikon D5500 DSLR - Black        $670.00
+Nikon D5500 DSLR - Red        $630.00
+Apple iCam        $1,300.00
+Leica T Mirrorless Digital Camera        $530.00
+ ",we can put the products in the shopping cart ,products added to the shopping cart without any problems ,Pass
+8,"Verify that the user can navigate to the ""Software"" tab, select desired products, and add them successfully to the shopping cart.","1:click on computer tap 
+2:click on software tap 
+3:chosse the product (""Adobe Photoshop"",""Microsoft Windows OS"",""Sound Forge Pro (recurring)"") 
+4:click on the add to cart tap .","Adobe Photoshop        $75.00        
+1
+$75.00        
+Microsoft Windows OS        $65.00        
+1
+$65.00        
+Sound Forge Pro (recurring)
+[Auto-ship, Every 30 Months]
+$54.99        
+1
+$54.99        
+",the products will put in shopping cart ,products added to the shopping cart ,Pass
+9,"Verify that the user can navigate to the ""Notebooks"" tab, select products, and add them successfully to the shopping cart. ","1:click on computer tap 
+2: click on notebooks tap 
+3:choose products (""Apple MacBook Pro"" , ""Asus Laptop"" , ""HP Envy 15.6-Inch Sleekbook"" , ""HP Spectre XT Pro UltraBook"" , ""Lenovo Thinkpad Carbon Laptop"" , ""Samsung Premium Ultrabook"")
+","1: AP_MBP_13        Picture of Apple MacBook Pro        Apple MacBook Pro        $1,800.00        
+2
+$3,600.00        
+2: AS_551_LP        Picture of Asus Laptop        Asus Laptop        $1,500.00        
+1
+$1,500.00        
+3: HP_ESB_15        Picture of HP Envy 15.6-Inch Sleekbook        HP Envy 15.6-Inch Sleekbook        $1,460.00        
+1
+$1,460.00        
+4: HP_SPX_UB        Picture of HP Spectre XT Pro UltraBook        HP Spectre XT Pro UltraBook        $1,350.00        
+1
+$1,350.00        
+5: LE_TX1_CL        Picture of Lenovo Thinkpad Carbon Laptop        Lenovo Thinkpad Carbon Laptop        $1,360.00        
+1
+$1,360.00        
+6: SM_900_PU        Picture of Samsung Premium Ultrabook        Samsung Premium Ultrabook        $1,590.00        
+1
+$1,590.00        
+",the products we choose will put in the shopping cart ,"When we choose the products and click on the add to cart tab,
+ we find that the Apple MacBook Pro cannot be added to less than 2",Fail
+10,"Verify that the user can browse products under the ""Books"" section, select desired items, and add them successfully to the shopping cart.","1:click on Books tap  
+3:click add to cart on all products ","Fahrenheit 451 by Ray Bradbury
+First Prize Pies
+Pride and Prejudice",the products will put in shopping cart ,products added to shopping cart ,Pass
+11,"Verify that the user can navigate to the ""Jewelry"" section, select one or more items, and add them successfully to the shopping cart.","1:click on jewelry tap 
+2:click add to cart on all products But we found a product that is not available for purchase,only for rent. 
+3:We choose the rental period and set the period from October 10 to November 10.","Elegant Gemstone Necklace (rental)
+Flower Girl Bracelet
+Vintage Style Engagement Ring",the products will put in shopping cart ,"The products were placed in the shopping cart
+, but we encountered a problem with one of the products (Elegant Gemstone Necklace)
+, which is that this product cannot be purchased,
+ only rented, but it was placed in the shopping cart.",Fail
+12,"Verify that the user can navigate to the ""Gift Cards"" section, select one or more gift cards, and add them successfully to the shopping cart.","click on Gift cards Tap then choose $25 Virtual Gift Card then we will ask about :
+1:Recipient's Name:
+moamen
+ *
+2:Recipient's Email:
+moamenabdalmanam@gmail.com
+ *
+3:Your Name:
+Moamen
+ *
+4:Your Email:
+moamenabdalmanam@gmail.com
+ *
+5:Message:
+Hi
+this is for first product.
+ 
+secound product :$50 Physical Gift Card
+we will asked about :
+1:Recipient's Name:
+Moamen
+ *
+2:Your Name:
+moamen
+
+
+ *
+3:Message:
+Hi
+
+third product : $100 Physical Gift Card 
+we will asked about : 
+Recipient's Name:
+moamen
+ *
+1:Your Name:
+moamen
+ *
+Message:
+hi
+
+","$25 Virtual Gift Card
+$50 Physical Gift Card
+$100 Physical Gift Card",the products will put in shopping cart ,products added to shopping cart ,Pass
+13,"Verify that the user can navigate to the “Apparel → Shoes” section, select products, add them to the shopping cart, and successfully place an order.","1:click on the Apparel tap 
+2:choose Shoes tap 
+3:click on Blue and Green Sneaker and choose size 8 
+4: click on Add to cart tap then choose Nike Floral Trainer and click Add to cart 
+5: choose adidas Consortium Campus 80s Running Shoes and click on Add to cart tap t
+6:go to shopping cart page to show if the products added successfully.""","""Blue and Green Sneaker – size 8 Nike Floral Trainer adidas Consortium Campus 80s Running Shoes""","""Products will be added to your shopping cart""",products added to shopping cart ,Pass
+14,"Verify that the user can navigate to the “Apparel → Clothing” section, select desired products, add them to the shopping cart, and successfully complete the order process.","1:click on the Apparel tap then choose Clothing tap
+2: click on Custom T-Shirt and custom word ""Ahmed""  
+3: click on Add to cart tap then choose Levi’s 511 Jeans
+4:click Add to cart then choose Casual Belt
+5: click Add to cart then go to shopping cart page to confirm the products.""","""Custom T-Shirt (custom word ""Ahmed"") Levi’s 511 Jeans (size 32) Casual Belt""","""Products will be added to your shopping cart""",products added to shopping cart ,Pass
+15,"Verify that the user can navigate to the “Apparel → Accessories” section, select one or more products, add them to the shopping cart, and successfully complete the order process.","1:click on the Apparel tap 
+2:choose Accessories tap 
+3:click on Ray-Ban Aviator Sunglasses 
+4: click Add to cart then choose Leather Wallet 
+5: click Add to cart then choose Smart Watch Series 5 
+6: click Add to cart then go to shopping cart page to confirm that all products are shown.""","""Ray-Ban Aviator Sunglasses Leather Wallet Smart Watch Series 5""","""Products will be added to your shopping cart""",products added to shopping cart ,Pass
+16,"Verify that the user can navigate to the “Digital Downloads” section, select one or more digital products, add them to the shopping cart, and successfully complete the order process.","1:click on the tap of Digital Downloads 
+2:choose the product Night Visions 
+3: click on the Add to cart tap 
+4: back to the same page 
+5: choose If You Wait (donation) 
+6: click Add to cart
+7:go to shopping cart page 
+8:check if the products were added successfully.""","""Night Visions If You Wait (donation)""","""Products will be added to your shopping cart""",products added to shopping cart ,Pass
+17,"Verify that the user can navigate to the “Digital Downloads” section, select digital products, add them to the shopping cart, and successfully complete the order process.","""click on the tap of Digital Downloads then choose the product Science & Faith, click Add to cart, then go to shopping cart page and increase the quantity to 2 and click Update shopping cart to verify if the total price is calculated correctly.""","""Science & Faith – $3.00 Quantity: 2""","""Products will be added to your shopping cart""",products added to shopping cart ,Pass

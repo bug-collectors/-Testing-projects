@@ -1,0 +1,53 @@
+Test case Id,Test sceario,Test steps,Expected result,Actual Result,Stats / Result
+1,"Verify that when a user adds a product to the comparison list from the Electronics section, the product is successfully added, a confirmation message appears, and the list count updates correctly.",Navigate to Home > Electronics.     Locate a product in the list.     Click on the “Add to Compare” button for that product.  ,"The selected product is successfully added to the comparison list.       A success message (e.g., “Item added to comparison list successfully”) is displayed.      The comparison list count increases by one.     ","The selected product is successfully added to the comparison list.       A success message (e.g., “Item added to comparison list successfully”) is displayed.      The comparison list count increases by one.     ",Successful 
+2,Ensure that clicking the “Add to Cart” button successfully adds the selected item to the cart and displays a confirmation message.,Navigate to Home > Electronics.    Select a product from the list.       Click on the “Add to Cart” button.,"The selected product is successfully added to the shopping cart.   A success message appears, e.g., “Item added to cart successfully.”   The cart icon or cart counter updates to reflect the new total number of items.","The selected product is successfully added to the shopping cart.   A success message appears, e.g., “Item added to cart successfully.”   The cart icon or cart counter updates to reflect the new total number of items.",Successful 
+3,Verify that hovering over the Electronics menu displays the dropdown list of categories and clicking any category navigates to the correct page.,"Hover the cursor over the Electronics category in the main navigation menu.
+Observe the dropdown list of subcategories (e.g., Mobile Phones, Laptops, Cameras, etc.).
+Click on any subcategory from the dropdown list.","The dropdown list appears upon hovering over Electronics.
+When a subcategory is clicked, the user is successfully redirected to the corresponding category page.
+The page displays products relevant to the selected subcategory","The dropdown list appears upon hovering over Electronics.
+When a subcategory is clicked, the user is successfully redirected to the corresponding category page.
+The page displays products relevant to the selected subcategory.",Successful 
+4,Verify that clicking a product opens its details page with all related information displayed properly.,"Locate a product from the displayed list.
+Click on the product image or product name/title.","The user is redirected to the Product Details Page.
+The page displays complete product information, including:
+Product name
+Price
+Description/specifications
+Availability (in stock/out of stock)
+“Add to Cart” and “Add to Compare” buttons","The user is redirected to the Product Details Page.
+
+The page displays complete product information",Successful 
+5,Confirm that the “Write Your Friend an Email” feature correctly rejects invalid email formats.,"Click on the “Write Your Friend an Email” option.
+Enter an invalid email address (e.g., gjoihogeu) in the recipient email field.
+Attempt to send the email.","The system detects the invalid email format.
+The email is not sent.
+A validation message appears (e.g., “Please enter a valid email address.”).","A validation message appears (e.g., “Please enter a valid email address.”).",Successful 
+6,Verify that the “Put Address Here to Order” feature validates the entered Zip Code format.,"Click on the “Put Address Here to Order” field.
+Enter an invalid Zip Code, such as ""no number code"".
+Attempt to proceed with the order.","The system should validate the Zip Code format and display an error message (e.g., “Please enter a valid Zip Code.”).
+The order should not proceed until a valid numeric Zip Code is entered.","The system accepts invalid Zip Codes like ""no number code"".
+The user is able to proceed without proper validation.",Failed 
+7,"Ensure that entering invalid input (e.g., ////) in the Quantity field triggers a validation message.","Locate the Quantity field for the selected product.
+Enter an invalid value, such as //// or any non-numeric input.
+Attempt to add the item to the cart or proceed with the order.","The system detects the invalid input.
+A validation message appears stating that the quantity must be a positive number (e.g., “Quantity must be a positive number.”).
+The system prevents proceeding until a valid numeric value is entered.","The system detects the invalid input.
+A validation message appears stating that the quantity must be a positive number (e.g., “Quantity must be a positive number.”).
+",Successful 
+8,Verify that changing the “Items Per Page” setting to 3 limits the displayed products to three per page.,"Locate the “Items Per Page” option on the product listing page.
+Set the value to 3.
+Observe the number of products displayed on the page.","Only three products are displayed on the current page.
+Pagination (Next/Previous buttons) adjusts accordingly if more products exist.
+No layout or display issues occur.","Only three products are displayed on the current page.
+Pagination (Next/Previous buttons) adjusts accordingly if more products exist.
+No layout or display issues occur.",Successful 
+9,Check that changing the product display layout from horizontal to vertical updates the page layout correctly.,Locate the Display Options section on the product listing page.     Select the Vertical display option instead of the current Horizontal view.    Observe how the products are displayed.,"The product layout successfully changes from Horizontal to Vertical.
+All product details (image, title, price, etc.) are properly aligned in vertical format.
+No distortion or alignment issues appear on the page.","The product layout successfully changes from Horizontal to Vertical.
+All product details (image, title, price, etc.) are properly aligned in vertical format.
+No distortion or alignment issues appear on the page.",Sucessful 
+10,"Ensure that when a user sets a specific price range, only the products within that range are displayed on the product listing page.","Locate the Price Range filter on the page.
+Set the filter to a specific range (e.g., $100 – $300).
+Apply the filter.","Only products with prices within the selected range are displayed.
+",Only products with prices within the selected range are displayed.,Sucessful 

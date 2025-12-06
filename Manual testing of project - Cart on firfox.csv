@@ -1,0 +1,9 @@
+Test case Id,Test sceario,Test steps,Test data,Expected ready,Actual Result,Stats / Result
+TC _1,Verify user can add a product to cart from product details page,Open Firefox → Navigate to website → Open a product → Click “Add to cart,Nikon D5500 DSLR,Product added successfully + Cart icon shows count,Product added successfully,Pass
+TC_2,Add item directly from category listing,Firefox → Navigate → Go to Electronics → Click Add to cart on item,Apple iCam,Product added + cart updated,Works correctly,Pass
+TC_3,Cart opens when clicking cart icon,Firefox → Login → Add item → Click cart icon → View cart,Apple iCam,Cart page loads & displays products,Opens fine,Pass
+TC_4,Verify updating item quantity,Add product → Go to cart → Change quantity → Click Update cart,Increase from 1 to 2,Quantity updated & total recalculated,Total recalculated successfully,Pass
+TC_5,Verify removing product from cart,Cart page → Click remove checkbox → Update cart,Nike Floral Roshe Customized Running Shoes,Product removed & cart empty text shown,Works as expected,Pass
+TC_6,Verify cart preserves items after browser refresh,Add products → refresh Firefox,Nike Floral Roshe Customized Running Shoes,Cart contents remain,Persisted successfully,Pass
+TC_7,Verify cart empties after logout,Add items → logout → login again,Levi's 511 Jeans,Cart should be empty,Items remained unexpectedly,Fail
+TC-8,Verify discount coupon field validation,Cart → insert invalid coupon → apply,Coupon: abc123,“Coupon invalid” message,Correct message shown,Pass
